@@ -2,154 +2,167 @@
 
 # 🎞 ASCII Art Player
 
-### Real-time GPU-Accelerated ASCII Media Player
+A modern real-time ASCII media player built with Python.
 
-Transform videos, images and audio into colorful ASCII art.
+Transform videos, images, and audio into colorful ASCII art with customizable rendering and color grading.
 
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 </div>
 
 ---
 
-# ✨ Overview
+# 📸 Screenshots
 
-ASCII Art Player is a modern media player that renders videos, images and audio into colorful real-time ASCII art.
+> Coming Soon...
 
-It combines high-performance rendering with customizable color grading, GPU-aware presets and an intuitive desktop interface.
+| Main Window | Video Playback |
+| ------------ | -------------- |
+| ![](docs/images/main.png) | ![](docs/images/video.png) |
 
----
-
-# 🚀 Features
-
-## 🎥 Media Support
-
-- Video playback
-- Image viewer
-- Audio visualization
-- Drag & Drop
-- Fullscreen mode
+| Color Grading | Audio Visualizer |
+| -------------- | ---------------- |
+| ![](docs/images/color.png) | ![](docs/images/audio.png) |
 
 ---
 
-## 🔤 ASCII Rendering
+# ✨ Features
 
-- Real-time conversion
-- High-quality rendering
-- Adjustable resolution
-- Custom ASCII charset
-- Live rendering pipeline
-
----
-
-## 🎨 Color Grading
-
-- Brightness
-- Contrast
-- Exposure
-- Gamma
-- Saturation
-- RGB Gain
-
----
-
-## ⚡ Performance
-
-- GPU-aware presets
-- Multi-threaded renderer
-- Optimized frame pipeline
-- FFmpeg support
-- Smooth playback
-
----
-
-## 🎮 Controls
-
-- Space — Play / Pause
-- ← → Seek
-- F11 — Fullscreen
-- M — Mute
-
----
-
-# 🖼 Screenshots
-
-> Coming Soon
-
----
-
-# 🏗 Rendering Pipeline
-
-```
-Video
-   │
-   ▼
-Frame Decoder
-   │
-   ▼
-Color Grading
-   │
-   ▼
-Luminance Analysis
-   │
-   ▼
-ASCII Conversion
-   │
-   ▼
-GPU Optimized Renderer
-   │
-   ▼
-Display
-```
+- 🎥 Play videos as real-time ASCII art
+- 🖼️ Display images in ASCII
+- 🎵 Audio waveform visualization
+- 🎨 Brightness, Contrast, Exposure, Gamma and Saturation controls
+- 🌈 RGB Color Grading
+- ⚡ GPU-aware rendering presets
+- 🖱️ Drag & Drop support
+- ⌨️ Keyboard shortcuts
+- 📺 Fullscreen mode
+- 🔊 FFmpeg audio playback
+- 🧵 Multi-threaded rendering pipeline
 
 ---
 
 # 📦 Requirements
 
 - Python 3.11+
-- Pillow
-- NumPy
-- OpenCV
-- FFmpeg
+- Windows 10 / 11
+- FFmpeg (Recommended)
 
 ---
 
 # 📥 Installation
 
+Clone the repository
+
 ```bash
-git clone https://github.com/USERNAME/ascii-player.git
-
+git clone https://github.com/AKA-HACKEREric/ascii-player.git
 cd ascii-player
+```
 
-pip install -r requirements.txt
+Install dependencies
 
+```bash
+pip install numpy pillow opencv-python tkinterdnd2
+```
+
+(Optional)
+
+```bash
+pip install imageio
+```
+
+Install FFmpeg
+
+1. Download FFmpeg
+2. Add it to your system PATH
+3. Verify installation
+
+```bash
+ffmpeg -version
+```
+
+Run the project
+
+```bash
 python ascii_player.py
 ```
 
 ---
 
-# 🛠 Tech Stack
+# 📁 Project Structure
+
+```text
+ascii-player/
+│
+├── docs/
+│   └── images/
+├── assets/
+├── README.md
+├── requirements.txt
+├── ascii_player.py
+└── LICENSE
+```
+
+---
+
+# ⌨️ Keyboard Shortcuts
+
+| Key | Action |
+|------|--------|
+| Space | Play / Pause |
+| ← → | Seek |
+| J / L | Skip 10 Seconds |
+| M | Mute |
+| F11 | Fullscreen |
+| Esc | Exit Fullscreen |
+
+---
+
+# 🛠 Built With
 
 - Python
+- OpenCV
 - Pillow
 - NumPy
-- OpenCV
-- FFmpeg
 - Tkinter
+- TkinterDnD2
+- FFmpeg
+
+---
+
+# 🚀 Roadmap
+
+- [x] Video Playback
+- [x] Image Viewer
+- [x] Audio Visualization
+- [x] Color Grading
+- [x] GPU Detection
+- [ ] Linux Support
+- [ ] macOS Support
+- [ ] Plugin System
+- [ ] Theme Support
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome.
+Pull requests and suggestions are welcome!
 
-Please submit Issues or Pull Requests.
+If you find a bug or have an idea, feel free to open an Issue.
 
 ---
 
 # 📄 License
 
-MIT License
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+**HACKEREric**
+
+GitHub:
+https://github.com/AKA-HACKEREric
